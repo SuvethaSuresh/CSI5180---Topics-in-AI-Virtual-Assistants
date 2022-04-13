@@ -1,0 +1,156 @@
+{"intents": [
+        {"tag": "greeting_chatbot_Hru",
+        "patterns": ["Good and How are you", "I'm doing well, what about you", "I'm fine and you", "Not too bad, you", "hello", "hi","Im great thanks, and you","how you doing?","how are you"],
+        "responses": ["I'm fine, how can I help you today?"],
+        "context_set": [""]
+        },	
+		{"tag": "greeting_chatbotHi",
+        "patterns": ["Hi", "Hello", "hey", "yo", "what up"],
+        "responses": ["Hi, how can I help you today?"],
+        "context_set": [""]
+        },		
+		{"tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "That's all", "I don't have any other question"],
+        "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+        "context": [""]
+        },
+        {"tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"],
+        "context": [""]
+        },
+        {"tag": "invalid_input",
+        "patterns": ["dfsdffsdfsdf","sdfheorihtoie", "wrrewtqttq", "weqwe", "guyuytuyfufdresre", ""],
+        "responses": ["Sorry, I can't understand you", "Please give me more information", "Not sure I understand"],
+        "context": [""]
+        },
+        {"tag": "options",
+        "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+        "responses": ["I can help you with information specific to your order, return, shipping, seller information, payment, product information, and product review and I can also provide support associated to any frequent asked question related with product authenticity, checking status of an order, cancelling orders, average delivery timelines for delivery, returning products, refunds, tracking orders, etc."],
+        "context": [""]
+        },
+        {"tag": "order_status",
+        "patterns": ["what is the status of my order cabfe1219e952ead9a914adde40efc42?", "track order 8c3d752c5c02227878fae49aeaddbfd7", "Where is my order with id 8c3d752c5c02227878fae49aeaddbfd7?", "why hasnt the order reached on time", "Cant wait any longer", "Tired of waiting", "why is there a delay", "will i get my order today"],
+        "responses": ["Delivered","Shipped","Other!"],
+        "context": [""]
+        },
+		{"tag": "order_approved",
+        "patterns": ["when was my order approved with order id 431B67?", "when was approved with id 604970dd9342c16efde4207c42f38f2d"],
+        "responses": ["2017-07-13 20:10:08"],
+        "context": [""]
+        },
+		{"tag": "order_shipped",
+        "patterns": ["when was my order shipped with order id f988dc242c742c1dfde32b24032b8fb3?", "Was my order with id f988dc242c742c1dfde32b24032b8fb3 shipped, when it was sent?" ],
+        "responses": ["2017-10-13 20:10:08"],
+        "context": [""]
+        },
+		{"tag": "order_arrival_estimated",
+        "patterns": ["when will I be receiving my order with id 3d5315f37b47c3b1d6a340014b809cad?" ],
+        "responses": ["2018-10-13 20:10:08"],
+        "context": [""]
+        }, 
+        {"tag": "order_delivered",
+        "patterns": ["Was my order with order id 3d5315f37b47c3b1d6a340014b809cad already delivered?", "where is my order fa906f338cee30a984d0945b3832e431", "Was it fulfill my order cd16e890b276ec7a7e2e93ba379339e1 already?", "Why I dont have my order 4d6f99dd1c15b51cdaf72f7b14223d26 already here by now", "Did you distribute my order already 0ab7fb08086d4af9141453c91878ed7a?"],
+        "responses": ["2018-10-13 20:10:08"],
+        "context": [""]
+        },
+		{"tag": "product_information",
+        "patterns": ["order id 4d59cd41f4606ae83af4985a74ae1354 comprises of?","List of components for my product with order id fa906f338cee30a984d0945b3832e431", "I want to know more information about this product","What description can you tell me about the product with id 2927b6be262c5528b8135e5d330c00f9?", "What's the total cost for my order including shipping fees?", "How much I will have to pay for my order inluding freight fees?", "What's the manufacturer of my order 4d59cd41f4606ae83af4985a74ae1354?","Which company manufactured the product with order number 4d59cd41f4606ae83af4985a74ae1354?"],
+        "responses": ["order comprises of motion sand safari playset"],
+        "context": [""]
+        },
+		{"tag": "missing_id",
+        "patterns": ["where is the order","where is my order","locate the order","Estimated delivery date of order", "Order approved date", "Order status"],
+        "responses": ["I not able to locate your order id. Can you please try again? "],
+        "context": [""]
+        },
+        {"tag": "Product_price",
+        "patterns": ["What is the price of the item in my order 23A31?", "Price of item in order id 5ad066b6e468fcd60b0d871bfa99112a?", "How much is it","What did I pay?"],
+        "responses": ["The price is "],
+        "context": [""]
+        },
+        {"tag": "Product_availability",
+        "patterns": ["Do you have any more products like the one in my order fe2eef3b23570cf0d77e3bfd237aed93?", "How many do you ahve left?","Can I get another product exactly like the one in my order id 23A31?", "Do you have this product in stock product id?"],
+        "responses": ["I have non in inventory, I have 20 in inventory"],
+        "context": [""]
+        },
+        {"tag": "Product_Description",
+        "patterns": ["Can I get the description for the product on my order fe2eef3b23570cf0d77e3bfd237aed93?","Do you have the description of the product I bought with the order id fe2eef3b23570cf0d77e3bfd237aed93?"],
+        "responses": ["The description for the product id 23A31 is []"],
+        "context": [""]
+        },
+         {"tag": "Product_shipping_cost",
+        "patterns": ["What's the freight for my order with id fe2eef3b23570cf0d77e3bfd237aed93?", "What the shipping cost for rmy order with id 2927b6be262c5528b8135e5d330c00f9", "How much is the shipping"],
+        "responses": ["The cost associated to your order is []"],
+        "context": [""]
+        },
+        {"tag": "Customer_Average_review",
+        "patterns":["What's the average reviews provided by other customer for the product I had bought?"],
+        "responses":["Please enter your order id number?"],
+        "context": [""]
+        },
+        {"tag": "Installments",
+        "patterns": ["How many intallments I have in my order?", "Can i pay in periods for id fe2eef3b23570cf0d77e3bfd237aed93, how many installments?", "Can I pay monthly?"],
+        "responses": ["Can you please give me your order ID please?"],
+        "context": [""]
+        },
+        {"tag": "name",
+        "patterns": ["what is your name?","what should I call you chatbot?", "whats your name bot"],
+        "responses": ["I'm Amazin, How can I help you with?","Hey!I'm Amazin, How can I help you?"],
+        "context": [""]
+        },
+        {"tag":"FAQ_product_authentic",
+        "patterns":["Is this product authentic"],
+        "responses":["All goods sold by Amazin are 100% genuine and in the original manufacturer’s packaging (unless explicitly stated in the product listing)."],
+        "context":[""]
+		},
+		{"tag":"FAQ_Locating_Order",
+		"patterns":["Where is my order?"],
+		"responses":["Find tracking information and order details by clicking here.If you want to check the status of your order through Alexa, simply say Alexa,where's my stuff?"],		
+		"context":[""]
+		},
+        {"tag":"FAQ_Cancelling_orders",
+        "patterns":["How can I cancel my order?"],
+        "responses":["If you wish to cancel your order please notify Amazin in your Amazin account within 1 hour of making your order.Please include the following details:Your Name, Your Order Number, Reason for cancellation, Payment Method.The refund will be applied directly to your debit/credit card or paypal account."],
+        "context":[""]
+		},
+        {"tag": "FAQ_Return_order",
+        "patterns": ["How do I return my order?", "What's the return policy?", "How can i give you back the product"],
+        "responses": ["You can return your package using a label from Your Orders.Return Shipping Costs unless your item is eligible for Free Returns, if you return an item using the return label from Your Orders, and the reason for return is not a result of an Amazin.ca error, we'll deduct the cost of return shipping from your refund. If you choose the Canada Post option, the amount that we'll deduct from your refund is displayed. If you choose the self-return option, you'll pay the cost charged by the carrier selected.For more information about refunds and refund amounts, go to Refunds and Exchanges."],
+        "context": [""]
+        },
+        {"tag": "FAQ_Getting_Refund_Amount",
+        "patterns": ["When will I be refunded?", "When a refund will issue to me", "where is my money, I sent the product to you", "I havent received my refund money"],
+        "responses":["Upon receipt of your return, Amazin will issue a refund within 3-5 working days* starting from the date your return is received."],
+        "context": [""]
+        },
+		{"tag": "FAQ_Subscribe_and_Save",
+		"patterns": ["How can I subscribe to the Subscribe and Save?"],
+        "responses": ["1.Select Subscribe & Save on the product page for thousands of products in the Subscribe & Save Store.2.Select the quantity and schedule that works for you, from every 2 weeks to 6 months. 3.Create your subscription. Sit back, relax, we will take care of the rest. Shipping is always free. Subscribe more. Save more."],
+        "context": [""]
+        },
+		{"tag": "FAQ_Sell_on_Amazin",
+		"patterns": ["How can I sell in Amazin?"," What are the steps to sell on Amazin","How it works?"],
+        "responses": ["You can use Seller Central as the web interface used to manage all aspects of your Selling on Amazin account. You can add product information, make inventory updates, manage orders, manage payments, and evaluate sales performance through a suite of web-based and downloadable tools. You have three options for submitting product-related data: 1-Use the Add a Product feature on Seller Central to create one product at a time. 2-Use inventory files to upload multiple products simultaneously. 3-Integrate your system with Amazin's catalogue using Amazin Marketplace Web Services(MWS)."],
+        "context": [""]
+        },
+		{"tag": "FAQ_e-mail_mobile_number_changed",
+		"patterns": ["What can I do if my phone number changed?", "What can I do if my mobile number changed?","What can I do if my cellphone changed?","My e-mail address or mobile phone number changed?"],
+        "responses": ["If you no longer use the e-mail address associated with your Amazin account, you may contact Customer Service for help restoring access to your account."],
+        "context": [""]
+        },	
+		{"tag": "FAQ_order-replacement",
+		"patterns": ["Can my order be replaced?", "How can I replaced my product","I need a replacement for my item", "My order is physically damaged and in defective condition, how can I replace it?", "My item is different from the description on the product detail page, I want to replace it", "I need to return my product it has a missing parts and accessories, How can I exchange it?"],
+        "responses": ["Only Fulfilled by Amazin items, Prime eligible items and few Seller Fulfilled items can be replaced. If the item you ordered arrived in a physically damaged or defective condition or is different from their description on the product detail page, or has missing parts or accessories, it will be eligible for a free replacement, provided the exact item is available with the same seller. For more details, please see Amazin.in Replacement Policy."],
+        "context": [""]
+        },
+		{"tag": "FAQ_gift_return",
+		"patterns": ["How can I return a gift?", "Can a give you back a gift?"],
+        "responses": ["Please visit the Gift Returns option and enter the Order id to initiate a return. You can also return a gift item in exchange for an Amazin Pay Gift Card, if the gift giver has sent a Gift Receipt to you. For guidance on returning a gift item using a gift receipt, please see Gift Receipts on Amazin website."],
+        "context": [""]
+        }
+		    
+   ]
+}
+
+		
